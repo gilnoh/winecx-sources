@@ -1,7 +1,10 @@
-# Wine's own .gitattributes (now at sources/wine/) declares this macro attribute,
-# and git only accepts macro definitions in the ROOT .gitattributes. Without this
-# line every git operation warns:
+# Wine's own .gitattributes (now at sources/wine/) declares a macro attribute, and
+# git only *honours* macro definitions in the ROOT .gitattributes. Declaring the
+# same macro here makes it resolve — `git check-attr generated -- sources/wine/configure`
+# reports "set", so generated files are classified correctly.
+#
+# It does NOT silence the warning git prints while parsing the subdirectory file:
 #   [attr]generated ... not allowed: sources/wine/.gitattributes:1
-# Declaring the same macro here silences that, and leaves sources/ untouched --
-# which is the invariant this repository exists to keep.
+# That warning goes to stderr on most git commands and is unavoidable as long as the
+# vendored tree lives in a subdirectory, which is the layout we want. Cosmetic only.
 [attr]generated gitlab-generated linguist-generated=true
