@@ -1,0 +1,28 @@
+winecx-sources
+==============
+
+sources/
+--------
+Copyright (C) CodeWeavers, Inc. and the Wine authors.
+Licensed under the GNU Lesser General Public License, version 2.1 or later
+(SPDX-License-Identifier: LGPL-2.1-or-later).
+
+The contents of sources/ are an unmodified redistribution of the `sources/wine`
+tree from CodeWeavers' published CrossOver source releases:
+
+    https://media.codeweavers.com/pub/crossover/source/
+
+The canonical licence text ships with the source itself, at
+sources/wine/COPYING.LIB.
+
+Nothing in sources/ is the work of this repository. Verify that claim yourself:
+
+    ./winecx.sh verify <crossover version>
+
+Everything else
+---------------
+README.md, NOTICE, RELEASES.md and winecx.sh are original work, offered under the
+MIT licence.
+
+Not affiliated with, endorsed by, or supported by CodeWeavers, Inc.
+CrossOver is a trademark of CodeWeavers, Inc.

@@ -1,0 +1,3 @@
+# Release tarballs are large (~142 MB) and are re-downloadable from CodeWeavers.
+# winecx.sh will use a local copy if one is present, but never commits it.
+crossover-sources-*.tar.gz
