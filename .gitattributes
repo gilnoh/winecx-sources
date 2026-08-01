@@ -1,0 +1,7 @@
+# Wine's own .gitattributes (now at sources/wine/) declares this macro attribute,
+# and git only accepts macro definitions in the ROOT .gitattributes. Without this
+# line every git operation warns:
+#   [attr]generated ... not allowed: sources/wine/.gitattributes:1
+# Declaring the same macro here silences that, and leaves sources/ untouched --
+# which is the invariant this repository exists to keep.
+[attr]generated gitlab-generated linguist-generated=true
